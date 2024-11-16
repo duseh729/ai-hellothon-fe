@@ -2,6 +2,7 @@ import { baseInstance } from "./util/instance";
 import { v4 as uuidv4 } from "uuid";
 
 const postChat = async messages => {
+  console.log("엘리스챗 실행")
   let sessId;
   if (sessionStorage.getItem("sessId")) {
     sessId = sessionStorage.getItem("sessId");
